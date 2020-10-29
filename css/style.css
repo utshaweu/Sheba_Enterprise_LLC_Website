@@ -1,0 +1,444 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+}
+img{
+  vertical-align: middle;
+  border: 0;
+}
+body{
+  font-family: 'Asap', sans-serif;
+}
+/* ============================================================================================
+                                     Sub Navbar Part Css
+=============================================================================================== */
+#sub-navbar{
+  background: #2d3436;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.sub-content a{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sub-content a i{
+  color: #2cb978;
+  margin-right: 10px;
+}
+/* ===========================================================================================
+                                     Navbar Part Css
+============================================================================================= */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+.mr1{
+  background: #2cb978;
+  border-radius: 25px;
+  padding: 7px 18px;
+  border: 1px solid #2cb978;
+  transition: all linear .3s;
+}
+.mr1:hover{
+  background: transparent;
+}
+.navbar{
+  position: absolute;
+  top: 6%;
+  width: 100%;
+  z-index: 99;
+  padding: 0;
+}
+/* =============================================================================================
+                                  Banner Part Css
+================================================================================================ */
+#banner{
+  background: url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 400px;
+  position: relative;
+}
+#banner::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.banner-bg{
+  position: relative;
+  z-index: 9999;
+}
+.wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.banner-content h6{
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.banner-content h5{
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.banner-content .btn{
+  background: #2cb978;
+  border-color: #2cb978;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: all linear .3s;
+}
+.banner-content .btn:hover{
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #2cb978;
+}
+.banner-content .mr2{
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #2cb978;
+  transition: all linear .3s;
+}
+.banner-content .mr2:hover{
+  background: #2cb978;
+  border-color: #2cb978;
+  color: #ffffff;
+}
+
+/* ======================================================================================================= 
+                                               All Part Css
+========================================================================================================== */
+#all{
+  padding-bottom: 80px;
+}
+.all-content{
+  transition: all linear .3s;
+}
+.all-content:hover{
+  -webkit-box-shadow: 1px 0px 5px 5px rgba(172,230,246,0.5);
+  -moz-box-shadow: 1px 0px 5px 5px rgba(172,230,246,0.5);
+  box-shadow: 1px 0px 5px 5px rgba(172,230,246,0.5);
+  transform: translateY(2px);
+}
+.images{
+  position: relative;
+}
+.images .wave2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.all-details{
+  padding: 25px;
+  background: #e4fcf9;
+}
+.all-details h6{
+  color: #1a936f;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.all-details p{
+  color: #2d3436;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 15px;
+}
+.all-details .btn{
+  background: #2cb978;
+  border-color: #2cb978;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+/* =============================================================================================================
+                                             Key Products Part Css
+=============================================================================================================== */
+#key{
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.title h6{
+  text-align: center;
+  color: #403f3f;
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 45px;
+}
+.key-content{
+  background: #e4fcf9;
+  height: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+  transition: all linear .3s;
+}
+.key-content:hover{
+  -webkit-box-shadow: 1px 0px 5px 5px rgba(172,230,246,0.5);
+  -moz-box-shadow: 1px 0px 5px 5px rgba(172,230,246,0.5);
+  box-shadow: 1px 0px 5px 5px rgba(172,230,246,0.5);
+  transform: translateY(2px);
+}
+.key-content h6{
+  color: #1a936f;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.key-content .btn{
+  background: #2cb978;
+  border-color: #2cb978;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+.mr3{
+  height: 200px;
+}
+.key-arrows{
+  margin-top: 50px;
+}
+.key-arrows i{
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: #2cb978;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* ===============================================================================================
+                                            Quote Part Css
+================================================================================================= */
+#quote{
+  background: url(../images/quote.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  position: relative;
+}
+#quote::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+}
+.wave4{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.quote-form{
+  background: #ffffff;
+  padding: 30px;
+}
+.quote-form h6{
+  text-align: center;
+  color: #403f3f;
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.quote-form label{
+  font-size: 16px;
+  color: #1a936f;
+  font-weight: 600;
+}
+.quote-form .form-control{
+  background: #e4fcf9;
+  font-size: 16px;
+  color: #2d3436;
+  font-weight: 400;
+}
+.quote-form .btn{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: #2cb978;
+  border-color: #2cb978;
+}
+.quote-form .form-control:focus{
+  box-shadow: none;
+  background: #ffffff;
+  border-color: #2cb978;
+}
+
+/* =============================================================================================
+                                            Feedback Part Css
+================================================================================================ */
+.feedback-content{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  background: #e4fcf9;
+}
+.feedback-content h6{
+  color: #2cb978;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* ===============================================================================================
+                                          Footer Part Css
+================================================================================================= */
+#footer{
+  padding-top: 300px;
+  padding-bottom: 50px;
+  background: #403f3f;
+  position: relative;
+}
+.wave5{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.footer-content h6{
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.mr4::after{
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #2cb978;
+}
+.mr5::before{
+  position: absolute;
+  content: '';
+  top: 100%;
+  right: 0;
+  width: 100px;
+  height: 2px;
+  background: #2cb978;
+}
+.footer-content p{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer-content a{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer-content h5{
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 70px;
+  padding-bottom: 10px;
+}
+.footer-content a i{
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  background: #2cb978;
+}
+
+/* ===============================================================================================
+                                         Footer Bottom Part Css
+================================================================================================= */
+#footer-bottom{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #2d3436;
+}
+.footer-btm{
+  text-align: center;
+  font-style: italic;
+}
+.footer-btm p{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-btm p span{
+  color: #2cb978;
+  padding-right: 8px;
+  font-weight: 600;
+}
+.footer-btm p a{
+  color: #ffffff;
+}
