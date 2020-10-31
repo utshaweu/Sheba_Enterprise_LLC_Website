@@ -68,6 +68,9 @@ body{
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   color: #ffffff;
 }
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #ffffff;
+}
 .mr1{
   background: #2cb978;
   border-radius: 25px;
@@ -80,10 +83,9 @@ body{
 }
 .navbar{
   position: absolute;
-  top: 6%;
   width: 100%;
-  z-index: 99;
-  padding: 0;
+  z-index: 999;
+  padding-top: 8px;
 }
 /* =============================================================================================
                                   Banner Part Css
@@ -109,13 +111,13 @@ body{
 }
 .banner-bg{
   position: relative;
-  z-index: 9999;
+  z-index: 99;
 }
 .wave{
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9;
 }
 .banner-content h6{
   color: #ffffff;
